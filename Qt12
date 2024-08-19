@@ -1,0 +1,52 @@
+Questão 12
+
+Console.Write("Digite um número inteiro positivo para gerar a sequência
+de Fibonacci: ");
+
+string entrada = Console.ReadLine();
+
+if (int.TryParse(entrada, out int limite) && limite > 0)
+
+{
+
+int a = 0;
+
+int b = 1;
+
+Console.WriteLine("Sequência de Fibonacci:");
+
+while (a <= limite)
+
+{
+
+Console.WriteLine(a);
+
+int proximo = a + b;
+
+a = b;
+
+b = proximo;
+
+}
+
+}
+
+else
+
+{
+
+Console.WriteLine("Entrada inválida. Por favor, digite um
+
+número inteiro positivo.");
+
+}
+
+Questão 13
+
+Console.Write("Quantos nomes você gostaria de inserir? ");
+
+string entrada = Console.ReadLine();
+
+if (int.TryParse(entrada, out int quantidade) && quantidade >
+
+0)
