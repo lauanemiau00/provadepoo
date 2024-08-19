@@ -6,3 +6,11 @@ if (N > 0){
 }
 
 else if ( N == 0){
+   Console.WriteLine($"Seu número {N} é Zero");
+
+}
+
+else if ( N < 0){
+   Console.WriteLine($"Seu número {N} é Negativo");
+
+}
