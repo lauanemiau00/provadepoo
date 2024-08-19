@@ -23,3 +23,5 @@ taxa de câmbio positiva.");
 
 
 valorEmDolares = valorEmReais / taxaDeCambio;
+
+Console.WriteLine($"O valor de R${valorEmReais} convertido para dólares é: ${valorEmDolares:F2}");
