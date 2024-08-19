@@ -1,0 +1,25 @@
+double valorEmReais;
+    double taxaDeCambio;
+    double valorEmDolares;
+
+
+     Console.Write("Digite o valor em reais: ");
+      while (!double.TryParse(Console.ReadLine(), out valorEmReais)
+|| valorEmReais < 0)
+{
+    Console.WriteLine("Entrada inválida. Por favor, digite um
+valor numérico positivo.");
+    Console.Write("Digite o valor em reais: ");
+}
+    Console.Write("Digite a taxa de câmbio (reais por dólar): ");
+while (!double.TryParse(Console.ReadLine(), out taxaDeCambio)
+|| taxaDeCambio <= 0)
+{
+    Console.WriteLine("Entrada inválida. Por favor, digite uma
+taxa de câmbio positiva.");
+     Console.Write("Digite a taxa de câmbio (reais por dólar):");
+}
+    
+
+
+valorEmDolares = valorEmReais / taxaDeCambio;
