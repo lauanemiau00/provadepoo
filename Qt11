@@ -1,0 +1,45 @@
+Console.Write("Digite um número inteiro para calcular o fatorial: ");
+    string entrada = Console.ReadLine();
+
+
+
+if (int.TryParse(entrada, out int numero))
+{
+   if (numero < 0)
+{
+
+       Console.WriteLine("O fatorial não é definido para números negativos.");
+}
+else
+{
+
+  int resultado = CalcularFatorial(numero);
+  Console.WriteLine($"O fatorial de {numero} é {resultado}");
+
+}
+
+}
+
+else
+
+{
+
+Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro.");
+
+}
+
+static int CalcularFatorial(int n)
+
+{
+
+if (n <= 1)
+
+{
+
+return 1;
+
+}
+
+return n * CalcularFatorial(n - 1);
+
+}
