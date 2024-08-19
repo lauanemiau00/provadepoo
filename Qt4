@@ -1,0 +1,8 @@
+int N = int.Parse(Console.ReadLine());
+
+if (N > 0){
+    Console.WriteLine($"Seu número {N} é Positivo.");
+
+}
+
+else if ( N == 0){
